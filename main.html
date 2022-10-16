@@ -19,7 +19,16 @@
     button {font-size: 16px; background-color: #cc00ff; color: white; border-radius: 12px; transition-duration: 0.4s;}
     button:hover {background-color: #4CAF50; color: white;}
     div.spacing { margin: auto; padding: 40px;}
-    
+    * {box-sizing: border-box;}
+    body {font-family: Arial, Helvetica, sans-serif;}
+    /* Float four columns side by side */
+    .column { float: left; width: 25%; padding: 0 10px;}
+    /* Remove extra left and right margins, due to padding in columns */
+    .row {margin: 0 -5px;}
+    /* Clear floats after the columns */
+    .row:after {content: ""; display: table; clear: both;}
+    /* Style the counter cards */
+    .card {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */ padding: 16px; text-align: center; background-color: #f1f1f1;}
   </style>
 </head>
 
@@ -36,36 +45,36 @@
     I love playing board games that take a minute to learn but a lifetime to master.  Special props to my cousin, <b> Glen </b> and my <b> mum </b> for sparking the fire. 
     </p>
 
-    <ul class = "alt" class = "alt:nth-child(odd)">
-      <li> Four in a Row </li>
-      <li> Reversi </li>
-      <li> Chinese Checkers </li>
-      <li> Draughts </li>
-      <li> Mancala </li>
-      <li> Backgammon </li>
-      <li> Mills </li>
-      <li> Fox and Geese </li>
-      <li> Gobblet </li>
-      <li> Dominoes </li>
+    <ul>
+      <li class = "alt"> Four in a Row </li>
+      <li class = "alt"> Reversi </li>
+      <li class = "alt"> Chinese Checkers </li>
+      <li class = "alt"> Draughts </li>
+      <li class = "alt"> Mancala </li>
+      <li class = "alt"> Backgammon </li>
+      <li class = "alt"> Mills </li>
+      <li class = "alt"> Fox and Geese </li>
+      <liclass = "alt"> Gobblet </li>
+      <li class = "alt"> Dominoes </li>
     </ul>
 
     <p>
       Board games I plan to learn but haven't gotten to yet... (they are all linked to webpages that explain the rules for each game)
     </p>
     
-    <div class="row">
-  <div class="column">
-    <div class="card"><a href="https://www.youtube.com/watch?v=4Q9iCZkzTUk" target="_blank">Go</a></div>
-  </div>
-  <div class="column">
-    <div class="card"><a href="https://www.youtube.com/watch?v=mKRmq44L_7g" target="_blank">Bao</a></div>
-  </div>
-  <div class="column">
-    <div class="card"><a href="https://www.youtube.com/watch?v=DFQvw79wQHU" target="_blank">Carrom</a></div>
-  </div>
-  <div class="column">
-    <div class="card"><a href="https://www.youtube.com/watch?v=7l1Jf-E4CkA" target="_blank">Mahjong</a></div>
-  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card"><a href="https://www.youtube.com/watch?v=4Q9iCZkzTUk" target="_blank">Go</a></div>
+    </div>
+    <div class="column">
+      <div class="card"><a href="https://www.youtube.com/watch?v=mKRmq44L_7g" target="_blank">Bao</a></div>
+    </div>
+    <div class="column">
+      <div class="card"><a href="https://www.youtube.com/watch?v=DFQvw79wQHU" target="_blank">Carrom</a></div>
+    </div>
+    <div class="column">
+      <div class="card"><a href="https://www.youtube.com/watch?v=7l1Jf-E4CkA" target="_blank">Mahjong</a></div>
+    </div>
 </div>
  
     <hr>
